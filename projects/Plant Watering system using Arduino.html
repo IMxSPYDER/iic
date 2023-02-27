@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="projectdetails.css" />
+    <script src="https://kit.fontawesome.com/02f9eebff4.js"></script>
+    <title>Plant Watering system using Arduino</title>
+  </head>
+  <body>
+    <div id="project">
+
+<!-- /* =====================================Main Class============================== */ -->
+      
+
+      <div class="mainclass">
+        <h1>Plant Watering system using Arduino </h1>
+        <p class="para">
+            The Arduino is connected to a moisture sensor and relay via a breadboard. The Moisture sensor takes multiple readings from the soil each minute and when the moisture content drops below the pre-set value the relay is triggered sending 12v to the water pump. The power is cut again when the moisture sensor reads a large value.
+           
+        </p>
+
+        <h5 class="ctg">Internet of Things</h5>
+        
+        <div class="proj-img">
+            <img src="images/soil.png" alt="">
+        </div>
+      <!--  
+        <div class="slider">
+          <div class="slides">
+           
+          <input type="radio" name="radio-btn" id="radio1">
+            <input type="radio" name="radio-btn" id="radio2">
+            <input type="radio" name="radio-btn" id="radio3">
+            <input type="radio" name="radio-btn" id="radio4">
+            
+            <div class="slide first">
+              <img src="images/footpowergenerator.png" alt="">
+            </div>
+            <div class="slide">
+              <img src="images/goods transporter2.png" alt="">
+            </div>
+            <div class="slide">
+              <img src="images/goods transporter3.png" alt="">
+            </div>
+            
+            slide images end-
+            <div class="navigation-auto">
+              <div class="auto-btn1"></div>
+              <div class="auto-btn2"></div>
+              <div class="auto-btn3"></div>
+              <div class="auto-btn4"></div>
+            </div>
+           
+          </div>
+          
+           <div class="navigation-manual">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
+            <label for="radio4" class="manual-btn"></label>
+          </div> -
+         
+        </div>-->
+    
+      </div>
+    
+<!-- /* =====================================Team Members============================== */ -->
+
+<div class="team">
+    <h3>Team </h3>
+    <div class="team-box">
+      <div class="tbox1">
+        <div class="tboxes">
+          <h4>Technology </h4>
+          <h4></h4>
+        </div>
+        
+      </div>
+      
+    </div>
+  </div>
+      <div class="team">
+        <h3>Team Members</h3>
+        <div class="team-box">
+          <div class="tbox1">
+            <div class="tboxes">
+              <h4> </h4>
+              <h4></h4>
+            </div>
+            <div class="tboxes">
+              <h4></h4>
+              <h4></h4>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+
+<!-- /* =====================================Project Description============================== */ -->
+
+      <div class="proj-desc">
+        <h3>Project description</h3>
+
+        <p class="proj-des-p">
+          There are four pins on the module: 
+          AO: Analog Output
+          DO: Digital Output
+          VCC: 'VCC' stands for Voltage Common Collector. We'll connect the VCC pin to 5V on the Arduino
+          GND: In electronics, we define a point in a circuit to be a kind of zero volts or 0V reference point, on which to base all other voltage measurements. This point is called ground or GND.
+          <h4>Step 1: </h4>
+          start
+          <h4>Step 2: </h4>
+          command the Arduino  using Arduino software
+          <h4>Step 3:</h4>
+           connect VCC on the relay to 5V pin on Arduino
+           <h4>Step 4:</h4>
+          Connect GND on the relay to negative power rail of breadboard
+          <h4>Step 5:</h4>
+          Connect IN on relay to Pin 3 on Arduino
+          <h4>Step 6:</h4>
+          Connect the '-' black wire from battery pack to the negative power rail on the breadboard
+          <h4>Step 7:</h4>
+          Next, connect the black wire of pump to negative power rail
+          <h4>Step 8:</h4>
+          Connect two F-F jumper wires from the soil moisture sensor probe to the comparison module included in the kit.
+          <h4>Step 9:</h4>
+          Connect a F-M jumper wire from AO on the module to A0 on Arduino
+          <h4>Step 10:</h4>
+          Connect a F-M jumper wire from GND on the module to GND on Arduino
+          <h4>Step 11:</h4>
+          Connect a F-M jumper wire from VCC on the module to 3.3V on the Arduino
+          <h4>Step 12:</h4>
+          Connect red wire of pump to NC. You may need to use a small jewellers Phillips screwdriver to loosen the holding before plugging in the wire, and then tightening it again.
+          <h4>Step 13:</h4>
+          Connect the '+' red wire from battery holder to COM on the relay.
+          You may need to use a small jewellers Phillips screwdriver to loosen the holding 
+          before plugging in the wire, and then tightening it again.
+          <h4>Step 14:</h4>
+ Connect a M-M wire from the negative power rail of breadboard, to GND pin on Arduino
+Next, we will get started with programming the Arduino, so connect it to a computer with the Arduino IDE installed.
+<h4>Step 15:</h4>
+Now that you have connected the kit with an Arduino, the 'moisture' threshold value found in the sketch above may need to be modified based on what values your sensor outputs when the sensor is completely dry, compared to when the sensor is completely submerged in water.
+
+        </p>
+
+      </div>
+      <div class="proj-desc">
+        <h3>Future Scope</h3>
+
+        <p class="proj-des-p">
+          It can help in argricultural industry with a larger scale automatic crop watering system.
+          
+                  </p>
+      </div>
+
+<!-- /* =====================================Components============================== */ -->
+
+<!--
+      <div class="comp">
+        <h3>Components</h3>
+
+        <div class="comp-boxes">
+          
+            <div class="box-left">
+                <a target="_blank" href="https://www.electronicscomp.com/?gclid=EAIaIQobChMIvOvWouCf_QIVrphmAh1YYw97EAAYASAAEgJXvvD_BwE">
+                    <div class="box">
+                        <div class="num"><p>1</p></div>
+                    <h4>ARDUINO UNO R3 WITH CABLE </h4>
+                    </div>                    
+                </a>
+                <a target="_blank" href="https://www.electronicscomp.com/?gclid=EAIaIQobChMIvOvWouCf_QIVrphmAh1YYw97EAAYASAAEgJXvvD_BwE">
+                    <div class="box">
+                        <div class="num"><p>2</p></div>
+                    <h4>3D printed Enclosure</h4>
+                    </div>                    
+                </a>
+                <a target="_blank" href="https://www.electronicscomp.com/?gclid=EAIaIQobChMIvOvWouCf_QIVrphmAh1YYw97EAAYASAAEgJXvvD_BwE">
+                    <div class="box">
+                        <div class="num"><p>1</p></div>
+                    <h4>3D printed Enclosure</h4>
+                    </div>                    
+                </a>
+            </div>
+          
+
+          <div class="box-right">
+            <a target="_blank" href="https://www.electronicscomp.com/?gclid=EAIaIQobChMIvOvWouCf_QIVrphmAh1YYw97EAAYASAAEgJXvvD_BwE">
+                <div class="box">
+                    
+                    <div class="num"><p>1</p></div>
+                <h4>3D printed Enclosure</h4>
+                </div>                    
+            </a>
+            <a target="_blank" href="https://www.electronicscomp.com/?gclid=EAIaIQobChMIvOvWouCf_QIVrphmAh1YYw97EAAYASAAEgJXvvD_BwE">
+                <div class="box">
+                    <div class="num"><p>1</p></div>
+
+                <h4>3D printed Enclosure</h4>
+                </div>                    
+            </a>
+            <a  target="_blank" href="https://www.electronicscomp.com/?gclid=EAIaIQobChMIvOvWouCf_QIVrphmAh1YYw97EAAYASAAEgJXvvD_BwE">
+                <div class="box">
+                    <div class="num"><p>1</p></div>
+
+                <h4>3D printed Enclosure</h4>
+                </div>                    
+            </a>
+          </div>
+        </div>
+      </div>
+      -->
+
+<!-- /* =====================================Download Files============================== */ -->
+      
+
+      <div class="download">
+        <div class="file">
+          <a href="">
+            <h4>Download PDF</h4>
+            <i class="fa-solid fa-file-arrow-down"></i></a>
+          
+        </div>
+      </div>
+
+
+
+
+
+    </div>
+<!-- /* ====================Project Over==================== */ -->
+
+
+<!-- /* =====================================Scripts============================== */ -->
+
+
+    <script type="text/javascript">
+      var counter = 1;
+      setInterval(function(){
+        document.getElementById('radio' + counter).checked = true;
+        counter++;
+        if(counter > 4){
+          counter = 1;
+        }
+      }, 5000);
+      </script>
+
+  </body>
+</html>
+
+ 

@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Responsive Grid Cards</title>
+    <!--Google Font-->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <!--Stylesheet-->
+    <link rel="stylesheet" href="projects.css">
+    <link rel="stylesheet" href="preloader.css">
+  <script defer src="preloader.js"></script>
+    <script defer src="nav.js"></script>
+
+    <script defer src="proj.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="https://cdn.jsdelivr.net./npm/jquery-bez@1.0.11/src/jquery.bez.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+
+    <script src="https://kit.fontawesome.com/02f9eebff4.js"></script>
+
+    <script>
+
+        $(document).ready(function () {
+            $(".default_option").click(function () {
+                $(".dropdown ul").addClass("active");
+            });
+
+            $(".dropdown ul li").click(function () {
+               
+                var text = $(this).text();
+                
+                $(".default_option").text(text);
+                $(".dropdown ul").removeClass("active");
+
+                
+            });
+        });
+    </script>
+</head>
+
+<body>
+
+  <div id="preloader">
+    <div class="dot-spinner">
+      <div class="dot-spinner__dot"></div>
+      <div class="dot-spinner__dot"></div>
+      <div class="dot-spinner__dot"></div>
+      <div class="dot-spinner__dot"></div>
+      <div class="dot-spinner__dot"></div>
+      <div class="dot-spinner__dot"></div>
+      <div class="dot-spinner__dot"></div>
+      <div class="dot-spinner__dot"></div>
+    </div>
+  </div>
+
+  <nav>
+    <div class="logo">
+      <div class="nav-logo">
+        <img src="images/foot-logo.png">
+      </div>
+      <a href="#">INNOVATION</a>
+    </div>
+    <div class="hamburger">
+        <div class="bars1"></div>
+        <div class="bars2"></div>
+        <div class="bars3"></div>
+    </div>
+    <ul class="nav-links">
+        <div class="navv">
+          <li><a href="innovation.html">Home</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="faculty.html">Faculty</a></li>  
+    </div>      
+        <div class="buttons">
+            <div class="login-button"><a href="" class="button-link-login">Contact Us</a></div>
+      
+            <div class="wallet-button"><a href="projectform.php" class="button-link-wallet">Register</a></div>
+          </div>
+    </ul>
+</nav>
+    
+
+    <div class="wrapper">
+        <div class="search_box">
+            <div class="dropdown">
+                <div class="default_option">All</div>
+                <ul id="filter-btns">
+                    <li class="active" data-target="all">All</li>
+                    <li data-target="Robotics">Robotics</li>
+                    <li data-target="Drones">Drones</li>
+                    <li data-target="App">App</li>
+                    <li data-target="Arduino">Arduino</li>
+                    <li data-target="Raspberry Pi">Raspberry Pi</li>
+                    <li data-target="Radar">Radar</li>
+                </ul>
+            </div>
+            <div class="search_field">
+                <input type="search" class="input" id="search-input" placeholder="Search">
+                <i class="fas fa-search"></i>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    
+    <div class="help">
+
+
+        <div class="card" data-category="Robotics">
+          <img class="card-img" src="images/iot.png" alt="Rome" />
+          <div class="card-content">
+            <h1 class="card-header">HOME SECURITY </h1>
+            <p class="card-text">
+              IoT security is the technology segment focused on
+            safeguarding connected devices and networks in the internet of things (IoT).
+            </p>
+            <a href="projects/IOT HOME SECURITY SYSTEM.html">
+
+              <button class="card-btn">Visit <span>&rarr;</span></button>
+            </a>
+          </div>
+        </div>
+
+
+        <div class="card" data-category="Arduino">
+          <img
+            class="card-img"
+            src="images/rippness meter.png"
+            alt="Grand Canyon"
+          />
+          <div class="card-content">
+            <h1 class="card-header"> Ripeness meter </h1>
+            <p class="card-text">
+              Tells us whether the fruit is rippens or not.
+              <strong></strong>.
+            </p>
+            <a href="projects/Fruit and vegetable ripeness meter.html">
+
+              <button class="card-btn">Visit <span>&rarr;</span></button>
+            </a>
+          </div>
+        </div>
+
+
+        <div class="card" data-category="Drones">
+          <img class="card-img" src="images/dvi drone.png" alt="Maldives" />
+          <div class="card-content">
+            <h1 class="card-header">DJI Avata </h1>
+            <p class="card-text">
+              The Avata is a small drone quadcopter with from DJI.
+            </p>
+            <a href="projects/camara.html">
+
+              <button class="card-btn">Visit <span>&rarr;</span></button>
+            </a>
+          </div>
+        </div>
+
+
+        <div class="card" data-category="Robotics">
+          <img class="card-img" src="images/dvi.png" alt="Rome" />
+          <div class="card-content">
+            <h1 class="card-header">Robot hand </h1>
+            <p class="card-text">
+              Robot arm works similar to that of the human hand
+            </p>
+            <a href="projects/robot hand using arduino.html">
+
+              <button class="card-btn">Visit <span>&rarr;</span></button>
+            </a>
+          </div>
+        </div>
+
+
+        <div class="card" data-category="Robotics">
+          <img
+            class="card-img"
+            src="images/zero bugger.png"
+            alt="Grand Canyon"
+          />
+          <div class="card-content">
+            <h1 class="card-header">Zero Bugger</h1>
+            <p class="card-text">
+              To make Zero Bug.
+            </p>
+            <a href="projects/To make Zero Bug.html">
+
+              <button class="card-btn">Visit <span>&rarr;</span></button>
+            </a>
+          </div>
+        </div>
+
+
+        <div class="card" data-category="Arduino">
+          <img class="card-img" src="images/Gesture Vocalizer using Arduino.png" alt="Maldives" />
+          <div class="card-content">
+            <h1 class="card-header">Gesture Vocalizer</h1>
+            <p class="card-text">
+              Sign language, the language used as a way of communication for deaf and dumb people.
+            </p>
+            <a href="projects/gesture_vocalizer.html">
+
+              <button class="card-btn">Visit <span>&rarr;</span></button>
+            </a>
+          </div>
+        </div>
+
+        <div class="card" data-category="Robotics">
+          <img class="card-img" src="images/footpowergenerator.png" alt="Rome" />
+          <div class="card-content">
+            <h1 class="card-header">Footower Generation</h1>
+            <p class="card-text">
+              Generating the energy from the foodsteps.
+            </p>
+            <a href="projects/Footstep Power Generation using Piezo Electric Sensor.html">
+
+              <button class="card-btn">Visit <span>&rarr;</span></button>
+            </a>
+          </div>
+        </div>
+
+
+        <div class="card" data-category="Robotics">
+          <img
+            class="card-img"
+            src="images/hologram.png"
+            alt="Grand Canyon"
+          />
+          <div class="card-content">
+            <h1 class="card-header">3D Holographic 
+            </h1>
+            <p class="card-text">
+              robot works with 3d hologram.             
+            </p>
+            <a href="projects/3D Holographic Display with Gesture Controller.html">
+
+              <button class="card-btn">Visit <span>&rarr;</span></button>
+            </a>
+          </div>
+        </div>
+
+
+        <div class="card" data-category="Robotics">
+          <img class="card-img" src="images/humonid robot.png" alt="Maldives" />
+          <div class="card-content">
+            <h1 class="card-header">HUMAINOID ROBOT</h1>
+            <p class="card-text">
+              The Maldives are known for their
+              <strong>natural environment</strong> including the blue ocean,
+              white beaches, and clean air, attracting tourists.
+            </p>
+            <a href="projects/HUMAINOID ROBOT.html">
+
+              <button class="card-btn">Visit <span>&rarr;</span></button>
+            </a>
+          </div>
+        </div>
+
+        <div class="card" data-category="Robotics">
+          <img class="card-img" src="images/laser.png" alt="Rome" />
+          <div class="card-content">
+            <h1 class="card-header">Laser Engraver</h1>
+            <p class="card-text">
+              Laser Engraver using Arduino Uno
+            </p>
+            <a href="projects/Laser Engraver using Arduino Uno.html">
+
+              <button class="card-btn">Visit <span>&rarr;</span></button>
+            </a>
+          </div>
+        </div>
+
+
+        <div class="card" data-category="Robotics">
+          <img
+            class="card-img"
+            src="images/soil.png"
+            alt="Grand Canyon"
+          />
+          <div class="card-content">
+            <h1 class="card-header">Plant Watering </h1>
+            <p class="card-text">
+            The Moisture sensor takes multiple readings from the drops below the pre-set value the relay is triggered sending 12v to the water pump.
+
+            </p>
+            <a href="projects/Plant Watering system using Arduino.html">
+
+              <button class="card-btn">Visit <span>&rarr;</span></button>
+            </a>
+          </div>
+        </div>
+
+
+
+    </div>
+
+
+    
+<!-- ============================================Sponsors========================================= -->
+
+
+
+    <div class="texts ">
+        <div class="texts-bg">
+            <h1>Sponsors</h1>
+        </div>
+        <div class="texts-front">
+            <h4>Supported By</h4>
+        </div>
+    </div>
+    
+    <div class="containerr">
+        <div class="logos">
+            <div class="log1">
+                <img src="images/logo1.png">
+            </div>
+            <div class="log1">
+                <img src="images/logo2.png">
+            </div>
+            <div class="log1">
+                <img src="images/logo3.png">
+            </div>
+            <div class="log1">
+                <img src="images/logo10.png">
+            </div>
+            <div class="log1">
+                <img src="images/logo15.png">
+            </div>
+            <div class="log1">
+                <img src="images/logo11.png">
+            </div>
+            <div class="log1">
+                <img src="images/logo16.png">
+            </div>
+            <!-- <div class="log1">
+                <img src="images/logo8.png" >
+            </div> -->
+    
+        </div>
+        <div class="logos">
+            <div class="log1">
+                <img src="images/logo8.png">
+            </div>
+            <div class="log1">
+                <img src="images/logo16.png">
+            </div>
+            <div class="log1">
+                <img src="images/logo11.png">
+            </div>
+            <div class="log1">
+                <img src="images/logo15.png">
+            </div>
+            <div class="log1">
+                <img src="images/logo10.png">
+            </div>
+            <div class="log1">
+                <img src="images/logo3.png">
+            </div>
+            <div class="log1">
+                <img src="images/logo2.png">
+            </div>
+            <!-- <div class="log1">
+                <img src="images/logo1.png" >
+            </div> -->
+    
+        </div>
+    </div>
+    
+    
+    <footer>
+        <div class="footup">
+    
+            <div class="about">
+                <h2>Innovation</h2>
+                <h4>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim rerum, exceptu adipisicing elit. Enim
+                    rerum, exceptu</h4>
+            </div>
+            <div class="links">
+                <div class="links1">
+                    <h4>blalbls</h4>
+                    <a href="">Romeo</a>
+                    <a href="">Juliet</a>
+                    <a href="">Happy</a>
+                    <a href="">Ending</a>
+    
+                </div>
+                <div class="links1">
+                    <h4>hoobklkb</h4>
+                    <a href="">Shakspeare</a>
+                    <a href="">Macbeth</a>
+                    <a href="">Rabindranath</a>
+                    <a href="">Tagore</a>
+                    <a href="">Gitanjali</a>
+    
+                </div>
+                <div class="links1">
+                    <h4>hoobklkb</h4>
+                    <a href="">Shakspeare</a>
+                    <a href="">Macbeth</a>
+                    <a href="">Rabindranath</a>
+                    <a href="">Tagore</a>
+                    <a href="">Gitanjali</a>
+    
+                </div>
+            </div>
+            <div class="follow">
+                <h4>Follow Us</h4>
+                <div class="wrapperr">
+                    <div class="button">
+                       <div class="icon">
+                          <i class="fab fa-facebook-f"></i>
+                       </div>
+                       <span>Facebook</span>
+                    </div>
+                    <!-- <div class="button">
+                       <div class="icon">
+                          <i class="fab fa-twitter"></i>
+                       </div>
+                       <span>Twitter</span>
+                    </div> -->
+                    <div class="button">
+                       <div class="icon">
+                          <i class="fab fa-instagram"></i>
+                       </div>
+                       <span>Instagram</span>
+                    </div>
+                    <div class="button">
+                       <div class="icon">
+                          <i class="fab fa-whatsapp"></i>
+                       </div>
+                       <span>WhatsApp</span>
+                    </div>
+                    <div class="button">
+                       <div class="icon">
+                          <i class="fab fa-youtube"></i>
+                       </div>
+                       <span>YouTube</span>
+                    </div>
+                 </div>
+            </div>
+        </div>
+        <div class="copy">
+            <div class="foot-logo">
+                <img src="images/foot-logo.png" alt="">
+            </div>
+            <h6>Innovation cell</h6>
+            <span>© Copyright 2023 - INNOVATION - Website Developed by DROP </span>
+        </div>
+    
+    </footer>
+    <button class="go-top-btn">
+      <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+</body>
+
+</html>

@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="projectdetails.css" />
+    <script src="https://kit.fontawesome.com/02f9eebff4.js"></script>
+    <title>Fruit and vegetable ripeness meter </title>
+  </head>
+  <body>
+    <div id="project">
+
+<!-- /* =====================================Main Class============================== */ -->
+      
+
+      <div class="mainclass">
+        <h1>Fruit and vegetable ripeness meter </h1>
+        <p class="para">
+           Tells us whether the fruit is rippens or not.
+           
+        </p>
+
+        <h5 class="ctg">Internet of Things</h5>
+        
+        <div class="proj-img">
+            <img src="images/rippness meter.png" alt="">
+        </div>
+      <!--  
+        <div class="slider">
+          <div class="slides">
+           
+          <input type="radio" name="radio-btn" id="radio1">
+            <input type="radio" name="radio-btn" id="radio2">
+            <input type="radio" name="radio-btn" id="radio3">
+            <input type="radio" name="radio-btn" id="radio4">
+            
+            <div class="slide first">
+              <img src="images/footpowergenerator.png" alt="">
+            </div>
+            <div class="slide">
+              <img src="images/goods transporter2.png" alt="">
+            </div>
+            <div class="slide">
+              <img src="images/goods transporter3.png" alt="">
+            </div>
+            
+            slide images end-
+            <div class="navigation-auto">
+              <div class="auto-btn1"></div>
+              <div class="auto-btn2"></div>
+              <div class="auto-btn3"></div>
+              <div class="auto-btn4"></div>
+            </div>
+           
+          </div>
+          
+           <div class="navigation-manual">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
+            <label for="radio4" class="manual-btn"></label>
+          </div> -
+         
+        </div>-->
+    
+      </div>
+    
+<!-- /* =====================================Team Members============================== */ -->
+
+<div class="team">
+    <h3>Team </h3>
+    <div class="team-box">
+      <div class="tbox1">
+        <div class="tboxes">
+          <h4>Technology </h4>
+          <h4></h4>
+        </div>
+        
+      </div>
+      
+    </div>
+  </div>
+      <div class="team">
+        <h3>Team Members</h3>
+        <div class="team-box">
+          <div class="tbox1">
+            <div class="tboxes">
+              <h4>AAKRUTI KOLAGE </h4>
+              <h4></h4>
+            </div>
+            <div class="tboxes">
+              <h4>DEEPAK GUPTA</h4>
+              <h4></h4>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+
+<!-- /* =====================================Project Description============================== */ -->
+
+      <div class="proj-desc">
+        <h3>Project description</h3>
+
+        <p class="proj-des-p">
+            Thanks to our evolved acuity, it is not struggling for us to detect ripeness by the appearance of a fruit or 
+            vegetable. However, nowadays, foods are a subject of mass production. Thus, we need a more reliable and
+             effortless method to distinguish fruits and vegetables depending on their ripeness than the naked eye. In 
+            the hope of assisting food companies, grocery stores, and farmers in sorting fruits and vegetables, I 
+            developed this device that detects ripening stages by spectral color with a neural network model.
+            As fruits and vegetables ripen, they change color because of the four families of pigments:
+            
+<br>
+<ul>
+<li> chlorophyll (green) </li>
+<li>carotenoids (yellow, red, orange)</li>
+<li>flavonoids: anthocyanins + anthoxanthins (red, blue, purple)</li>
+<li>Betalains (red, yellow, purple)</li>
+</ul>
+<br>
+These pigments are groups of molecular structures absorbing a specific set of wavelengths and reflecting 
+the remainder. Unripe fruits are green because of chlorophyll in their cells. As they ripen, the chlorophyll 
+breaks down and is replaced by orange carotenoids and red anthocyanins. These compounds are 
+antioxidants that prevent the fruit from spoiling too quickly in the air. Then, the enzymatic browning occurs
+ and causes discoloration - turning brown. Enzymes function as a catalyst for chemical reactions instigating 
+discoloration, such as:
+<ul> <br>
+    <li>hydroxylation of phenols</li>
+    <li>oxidation of phenols</li>
+    </ul>
+    <br>
+    After doing some research on color-changing processes as fruits and vegetables ripen, I decided to build an artificial neural network (ANN) based on the classification model to interpret the spectral color of varying fruits and vegetables to predict ripening stages. <br>
+    Before building and testing my neural network model, I developed a web application in PHP to collate the spectral color data of fruits and vegetables generated by the AS7341 visible light sensor to create a ripening stages data set by spectral color. I used an Arduino Nano 33 IoT to send the data produced by the visible light sensor to the web application. Empirically, I assigned a ripening stage (label) while obtaining spectral color data for each fruit and vegetable by using four class buttons connected to the Nano 33 IoT: 
+    
+    <ul><br>
+        <li>	Early Ripe</li>
+        <li>	Partially Ripe</li>
+        <li>	Ripe</li>
+        <li>	Decay</li>
+        </ul>
+    <br>
+    After completing the data set, I built my artificial neural network (ANN) with TensorFlow to make predictions on the ripening stages (labels) based on spectral color.
+        </p>
+
+      </div>
+     
+
+<!-- /* =====================================Components============================== */ -->
+
+<!--
+      <div class="comp">
+        <h3>Components</h3>
+
+        <div class="comp-boxes">
+          
+            <div class="box-left">
+                <a target="_blank" href="https://www.electronicscomp.com/?gclid=EAIaIQobChMIvOvWouCf_QIVrphmAh1YYw97EAAYASAAEgJXvvD_BwE">
+                    <div class="box">
+                        <div class="num"><p>1</p></div>
+                    <h4>ARDUINO UNO R3 WITH CABLE </h4>
+                    </div>                    
+                </a>
+                <a target="_blank" href="https://www.electronicscomp.com/?gclid=EAIaIQobChMIvOvWouCf_QIVrphmAh1YYw97EAAYASAAEgJXvvD_BwE">
+                    <div class="box">
+                        <div class="num"><p>2</p></div>
+                    <h4>3D printed Enclosure</h4>
+                    </div>                    
+                </a>
+                <a target="_blank" href="https://www.electronicscomp.com/?gclid=EAIaIQobChMIvOvWouCf_QIVrphmAh1YYw97EAAYASAAEgJXvvD_BwE">
+                    <div class="box">
+                        <div class="num"><p>1</p></div>
+                    <h4>3D printed Enclosure</h4>
+                    </div>                    
+                </a>
+            </div>
+          
+
+          <div class="box-right">
+            <a target="_blank" href="https://www.electronicscomp.com/?gclid=EAIaIQobChMIvOvWouCf_QIVrphmAh1YYw97EAAYASAAEgJXvvD_BwE">
+                <div class="box">
+                    
+                    <div class="num"><p>1</p></div>
+                <h4>3D printed Enclosure</h4>
+                </div>                    
+            </a>
+            <a target="_blank" href="https://www.electronicscomp.com/?gclid=EAIaIQobChMIvOvWouCf_QIVrphmAh1YYw97EAAYASAAEgJXvvD_BwE">
+                <div class="box">
+                    <div class="num"><p>1</p></div>
+
+                <h4>3D printed Enclosure</h4>
+                </div>                    
+            </a>
+            <a  target="_blank" href="https://www.electronicscomp.com/?gclid=EAIaIQobChMIvOvWouCf_QIVrphmAh1YYw97EAAYASAAEgJXvvD_BwE">
+                <div class="box">
+                    <div class="num"><p>1</p></div>
+
+                <h4>3D printed Enclosure</h4>
+                </div>                    
+            </a>
+          </div>
+        </div>
+      </div>
+      -->
+
+<!-- /* =====================================Download Files============================== */ -->
+      
+
+      <div class="download">
+        <div class="file">
+          <a href="">
+            <h4>Download PDF</h4>
+            <i class="fa-solid fa-file-arrow-down"></i></a>
+          
+        </div>
+      </div>
+
+
+
+
+
+    </div>
+<!-- /* ====================Project Over==================== */ -->
+
+
+<!-- /* =====================================Scripts============================== */ -->
+
+
+    <script type="text/javascript">
+      var counter = 1;
+      setInterval(function(){
+        document.getElementById('radio' + counter).checked = true;
+        counter++;
+        if(counter > 4){
+          counter = 1;
+        }
+      }, 5000);
+      </script>
+
+  </body>
+</html>
+
+ 
